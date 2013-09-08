@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="cache.manifest">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -10,15 +10,31 @@
   </head>
   <body style='height:100%;width:100%;'>
     <!--share buttons-->
-    <div class="fb-like" data-href="http://bus.kaist.ac.kr" data-width="200" data-layout="button_count" data-action="recommend" data-show-faces="true" data-send="true"></div>
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bus.kaist.ac.kr" data-via="DongwooKim" data-hashtags="KAISTBUS">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    버스들 시간을 한데 모아두었습니다.<div class="fb-like" data-href="http://bus.kaist.ac.kr" data-width="200" data-layout="button_count" data-action="recommend" data-show-faces="true" data-send="true"></div>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bus.kaist.ac.kr" data-via="DongwooKim" data-hashtags="KAISTBUS">Tweet</a>
+
+    <div>
+      모바일에서 아래 시간표가 나오지 않을 경우
+      <a href="#" onclick="document.getElementById('timetable').style.display='';">클릭</a>
+      <div id="timetable" style="display:none;">
+        평일<br>
+        <img src="./img/week_timetable20130904.png">
+        <br>
+        주말&휴일
+        <br>
+        <img src="./img/holi_timetable20130904.png">
+      </div>
+    </div>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-<iframe style='height:100%;width:100%;' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0AqDBLew8e74TdGZvV1d1TTlHbC1UY3BPa051WC0yZFE&output=html'></iframe>
-    
+
+<iframe style='height:700px;width:100%;' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0AqDBLew8e74TdGZvV1d1TTlHbC1UY3BPa051WC0yZFE&output=html'></iframe>
+
+<div class="fb-comments" data-href="http://bus.kaist.ac.kr" data-width="470"></div>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
